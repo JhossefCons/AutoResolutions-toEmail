@@ -1,91 +1,124 @@
-# AutoResolutions-toEmail
+📧 AutoResolutions-toEmail
+Aplicación para procesar automáticamente resoluciones en PDF y enviar correos electrónicos con la información extraída de forma rápida y confiable.
 
-Esta aplicación procesa automáticamente resoluciones en PDF y envía correos electrónicos con la información extraída.
+🚀 Características principales
+📄 Lectura automática de resoluciones en PDF.
 
-## 📋 Instrucciones de uso
+🔍 Extracción de datos clave: número de resolución, fecha, nombre del estudiante, artículos relevantes, etc.
 
-1. Instalar las dependencias:
+✉️ Generación y envío de correos con asunto y cuerpo personalizados.
 
+🗂 Organización automática de PDFs procesados.
+
+📝 Registro detallado en logs para auditoría y diagnóstico.
+
+📦 Instalación y configuración
+
+1️⃣ Instalar dependencias
+```bash
 pip install -r requirements.txt
+```
 
-2. Configuración del entorno
-Configuración del archivo .env
-Crea un archivo .env en la raíz del proyecto con las siguientes variables:
+2️⃣ Configurar el entorno
+Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
 
-# Configuración SMTP (Ejemplo para Gmail)
+env
+Copiar
+Editar
+# Configuración SMTP (Ejemplo: Gmail)
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USERNAME=tu_correo@dominio.com
 SMTP_PASSWORD=tus_credenciales_o_app_password
 SMTP_FROM_EMAIL=tu_correo@dominio.com
-SMTP_SUBJECT_PREFIX=COMUNICACIÓN RESOLUCION {numero} DEL 2025
+SMTP_SUBJECT_PREFIX=COMUNICACIÓN RESOLUCIÓN {numero} DEL 2025
 
-# Destinatarios (separar múltiples correos con comas)
+# Destinatarios (múltiples separados por comas)
 EMAIL_RECIPIENTS=correo1@ejemplo.com,correo2@ejemplo.com
+Notas:
 
-Notas importantes:
+Para Gmail con verificación en dos pasos, utiliza una Contraseña de aplicación.
 
-Para Gmail, necesitarás una "Contraseña de aplicación" si usas verificación en dos pasos
+No subas tu archivo .env al repositorio (ya está en .gitignore).
 
-Nunca subas el archivo .env al repositorio (está incluido en .gitignore)
+3️⃣ Preparar carpetas y archivos
+Asegúrate de que existan las carpetas necesarias:
 
-3. Preparación de archivos
-Coloca los PDFs de las resoluciones en la carpeta /resoluciones_pdf/.
+```bash
+/resoluciones_pdf/   # PDFs a procesar
+/procesados/         # PDFs procesados
+/logs/               # Archivos de registro
+Coloca los PDFs a procesar dentro de /resoluciones_pdf/.
+```
 
-4. Ejecución del sistema
-bash
+▶️ Ejecución
+```bash
 python procesador_resoluciones.py
-5. Resultados
-Los PDFs procesados se moverán a /procesados/
+```
 
-Los logs detallados se guardarán en /logs/
+📊 Resultados
 
-# 🔍 Funcionamiento interno de La aplicación:
+Los PDFs procesados se moverán automáticamente a /procesados/.
 
-Busca información específica en las resoluciones:
+Los registros de ejecución se guardarán en /logs/.
 
-Número de resolución
+Los correos se enviarán a los destinatarios definidos en .env.
 
-Fecha de emisión
+🧠 Funcionamiento interno
 
-Nombre del estudiante
+Lectura de PDF y búsqueda de datos:
 
-Artículos relevantes
+Número y fecha de la resolución.
 
-Procesa el "ARTÍCULO CUARTO" para extraer direcciones de correo
+Nombre del estudiante.
 
-Genera y envía correos con:
+Artículos relevantes.
 
-Asunto automático con número de resolución
+Correos extraídos del ARTÍCULO CUARTO.
 
-Saludo según hora del día (Buenos días/tardes)
+Generación de correo:
 
-Cuerpo del mensaje estandarizado
+Asunto automático con el número de resolución.
 
-Firma institucional
+Saludo dinámico según la hora del día.
 
-# ⚠️ Notas importantes 
+Cuerpo del mensaje con formato estandarizado.
 
-Seguridad: Nunca compartas tu archivo .env
+Firma institucional.
 
-Logs: Revisa /logs/ para diagnóstico de errores
+Envío y registro:
 
-Pruebas: Verifica con 1-2 resoluciones antes de procesar lotes grandes
+Se envía el correo a los destinatarios.
 
-Personalización: Puedes modificar las plantillas de correo en enviar_correo.py
+Se registra la operación en logs.
 
-# 📂 Estructura del proyecto
+El PDF se mueve a la carpeta de procesados.
+
+⚠️ Recomendaciones
+Seguridad: No compartas tu .env ni tus credenciales.
+
+Pruebas: Ensaya primero con 1 o 2 PDFs antes de procesar lotes grandes.
+
+Personalización: Modifica enviar_correo.py para cambiar la plantilla del mensaje.
+
+Logs: Revisa /logs/ si ocurre algún error.
+
+📂 Estructura del proyecto
 
 /automatizacion-resoluciones/
-├── /resoluciones_pdf/    # PDFs a procesar
-├── /procesados/          # PDFs ya procesados
-├── /logs/                # Registros de ejecución
-├── .env                  # Configuración sensible (NO SUBIR)
-├── config.py             # Configuración de rutas
-├── enviar_correo.py      # Lógica de envío de emails
-├── procesador_resoluciones.py # Script principal
-├── requirements.txt      # Dependencias
-└── README.md             # Este archivo
+├── /resoluciones_pdf/           # PDFs a procesar
+├── /procesados/                 # PDFs procesados
+├── /logs/                       # Registros de ejecución
+├── .env                         # Configuración sensible (NO SUBIR)
+├── config.py                    # Configuración de rutas
+├── enviar_correo.py             # Lógica de envío de correos
+├── procesador_resoluciones.py   # Script principal
+├── requirements.txt             # Dependencias
+└── README.md                    # Este archivo
 
-# 🛠 Soporte
-Para problemas técnicos, revisa los logs o abre un issue en el repositorio.
+🛠 Soporte
+Si encuentras un problema:
+
+Revisa los logs en /logs/.
+
+Abre un issue en el repositorio con el detalle del error.
