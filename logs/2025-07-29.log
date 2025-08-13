@@ -1,0 +1,30 @@
+[2025-07-29 09:46:35] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-15:Bad number of channels) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x6f7fe6c3::Set<1,-1,-1>,struct cv::impl::A0x6f7fe6c3::Set<0,2,5>,4>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+[2025-07-29 09:50:49] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-15:Bad number of channels) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x6f7fe6c3::Set<1,-1,-1>,struct cv::impl::A0x6f7fe6c3::Set<0,2,5>,4>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+[2025-07-29 09:56:28] ERROR - Datos inválidos en RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: Número de resolución inválido
+[2025-07-29 10:22:57] ERROR - Datos inválidos en RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: Número de resolución inválido
+[2025-07-29 10:30:58] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: [Errno 11001] getaddrinfo failed
+[2025-07-29 10:33:16] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 10:36:27] ERROR - Datos incompletos en: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 11:37:52] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: procesar_resolucion() missing 1 required positional argument: 'nombre_archivo'
+[2025-07-29 11:46:28] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: procesar_resolucion() missing 1 required positional argument: 'nombre_archivo'
+[2025-07-29 11:49:30] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: [Errno 11001] getaddrinfo failed
+[2025-07-29 11:56:27] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: [Errno 11001] getaddrinfo failed
+[2025-07-29 13:34:10] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: [Errno 11001] getaddrinfo failed
+[2025-07-29 13:43:41] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 3f1490d57ef6-e8df8582d97sm2931561276.6 - gsmtp')
+[2025-07-29 13:59:14] ERROR - Error procesando RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf: (503, b'5.5.1 RCPT first. A mail transaction protocol command was issued out of\n5.5.1 sequence. For more information, go to\n5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.1 specifications. 00721157ae682-719f23b23e6sm19495787b3.65 - gsmtp')
+[2025-07-29 14:05:25] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 14:08:15] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 15:01:32] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 15:07:59] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 15:16:31] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf
+[2025-07-29 16:18:44] INFO - Procesado exitosamente: RESOL. VADM - 3152 JULIETH ALEXANDRA FIGUEROA GUTIERREZ.pdf

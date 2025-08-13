@@ -1,0 +1,7 @@
+.env
+*.env
+
+# Ignora TODOS los archivos dentro de la carpeta, pero mantiene la carpeta
+procesador/*
+resoluciones_pdf/*
+temp/*

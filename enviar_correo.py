@@ -1,3 +1,4 @@
+import os
 import smtplib
 import datetime
 from email.mime.text import MIMEText
@@ -37,7 +38,7 @@ def enviar_correo_resolucion(datos_resolucion, Archivo):
         
         msg = MIMEMultipart()
         msg['From'] = SMTP_CONFIG['from_email']
-        msg['To'] = ', '.join(['niconstain@gmail.com'])
+        msg['To'] = os.getenv('EMAIL_RECIPIENTS')
         msg['Subject'] = SMTP_CONFIG['subject_prefix'].format(numero=datos_resolucion['numero'])
         msg.attach(MIMEText(Texto_Correo, 'plain'))
         
