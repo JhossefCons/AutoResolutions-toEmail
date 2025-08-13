@@ -2,6 +2,6 @@
 *.env
 
 # Ignora TODOS los archivos dentro de la carpeta, pero mantiene la carpeta
-procesador/*
+procesados/*
 resoluciones_pdf/*
 temp/*
